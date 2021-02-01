@@ -10,8 +10,7 @@ const Slide = (props) => {
 
  return (
   <div className="slide">
-   <img src={imageURLS[imageIndex]}></img>
-   <p>{imageIndex + 1}/{imageURLS.length}</p>
+   <img src={imageURLS[imageIndex]} />
   </div>
  )
 }
