@@ -22,3 +22,7 @@ h1 {
  font-size: 1.2em;
  margin: 0 15px;
 }
+
+.nav-links li > a:hover {
+ opacity: 75%;
+}
