@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './Slideshow.css'
 
 const imageURLS = [
- 'https://i.imgur.com/AhxonCB.jpg', 'https://i.imgur.com/mfE3ILq.jpg'
+ 'https://i.imgur.com/AhxonCB.jpg', 'https://i.imgur.com/uqJKahs.jpg'
 ]
 
 const Slide = (props) => {
