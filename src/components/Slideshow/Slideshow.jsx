@@ -29,7 +29,7 @@ const Slideshow = () => {
  }
 
  return (
-  <div>
+  <div className="slideshow">
    <Slide imageIndex={currentSlideIndex} />
    <button onClick={previousSlide}>last</button>
    <button onClick={nextSlide}>next</button>

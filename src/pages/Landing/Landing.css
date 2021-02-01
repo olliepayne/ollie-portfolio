@@ -1,0 +1,12 @@
+.landing-page {
+ display: flex;
+ grid-template-areas:
+  "nav nav nav"
+  "row1 row1 activity"
+  "row2 row2 activity";
+}
+
+.row1 {
+ display: flex;
+ grid-area: row1;
+}
