@@ -6,7 +6,7 @@ const Landing = () => {
  return (
   <div className="landing-page">
    <div className="me-container">
-    <h2>Me</h2>
+    <h2>me:</h2>
     <Slideshow />
    </div>
    <ActivityFeed />
