@@ -1,12 +1,19 @@
 .landing-page {
  display: flex;
  grid-template-areas:
-  "nav nav nav"
-  "row1 row1 activity"
-  "row2 row2 activity";
+  "nav nav"
+  "me activity"
+  "testimonials activity";
+ margin: 20px 0;
 }
 
-.row1 {
+.me-container {
+ grid-area: me;
  display: flex;
- grid-area: row1;
+ justify-content: center;
+ width: 75%;
+}
+
+.me-container > .slideshow {
+ margin: 0 0 0 20px;
 }

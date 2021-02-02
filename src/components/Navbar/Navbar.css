@@ -7,6 +7,7 @@ nav {
  justify-content: space-around;
  align-items: center;
  height: 70px;
+ grid-area: nav;
 }
 
 h1 > a {

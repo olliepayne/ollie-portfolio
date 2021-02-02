@@ -1,13 +1,15 @@
 import './Landing.css'
 import Slideshow from '../../components/Slideshow/Slideshow'
+import ActivityFeed from '../../components/ActivityFeed/ActivityFeed'
 
 const Landing = () => {
  return (
   <div className="landing-page">
-   <div className="row1">
+   <div className="me-container">
     <h2>Me</h2>
     <Slideshow />
    </div>
+   <ActivityFeed />
   </div>
  )
 }
