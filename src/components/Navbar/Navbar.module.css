@@ -20,19 +20,19 @@ h1 > a:hover {
  opacity: 75%;
 }
 
-.nav-links {
+.navLinks {
  display: flex;
  justify-content: space-around;
  list-style-type: none;
  padding: 0;
 }
 
-.nav-links li > a {
+.navLinks li > a {
  text-decoration: none;
  font-size: 1.2em;
  margin: 0 15px;
 }
 
-.nav-links li > a:hover {
+.navLinks li > a:hover {
  opacity: 75%;
 }

@@ -1,13 +1,12 @@
-import './Navbar.css'
+import { Link } from 'react-router-dom'
+import CSS from './Navbar.module.css'
 
 const Navbar = () => {
  return (
   <nav>
-   <h1><a className="animated-underline" href="/">Oliver Payne</a></h1>
-   <ul className="nav-links">
-    <li><a href="/about">About</a></li>
-    <li><a href="/portfolio">Portfolio</a></li>
-    <li><a href="/contact">Contact</a></li>
+   <h1><Link to="/">Oliver Payne</Link></h1>
+   <ul className={CSS.navLinks}>
+    <li><Link to="/portfolio">Portfolio</Link></li>
    </ul>
   </nav>
  )
