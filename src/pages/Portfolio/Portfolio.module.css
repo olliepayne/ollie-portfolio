@@ -4,8 +4,17 @@
 
 .entryContainer {
  margin-bottom: 10px;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
 }
 
 .entryLinks {
- 
+ list-style-type: none;
+ padding: 0;
+ display: flex;
+}
+
+.entryLinks li {
+ margin-left: 10px;
 }

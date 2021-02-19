@@ -24,9 +24,9 @@ const Portfolio = () => {
  return (
   <div className={CSS.page}>
    <h3>General Assembly SEI Projects</h3>
-   <Entry name={"Connect 4"} description={"Recreated the classic Connect 4. HTML, CSS, and JavaScript."} links={[]} />
-   <Entry name={"Mesocycle Tracker"} description={"Athletic periodization tracking. MEN stack, Google OAuth."} links={[]} />
-   <Entry name={"Rosetta Send"} description={"Rock Climbing Route database. MERN stack, custom JWT auth."} links={[{ title: 'GitHub', url: '' }]} />
+   <Entry name={"Connect 4"} description={"Recreated the classic Connect 4. HTML, CSS, and JavaScript."} links={[{ title: 'Deployment', url: '' }, { title: 'GitHub', url: '' }]} />
+   <Entry name={"Mesocycle Tracker"} description={"Athletic periodization tracking. MEN stack, Google OAuth."} links={[{ title: 'Deployment', url: '' }, { title: 'GitHub', url: '' }]} />
+   <Entry name={"Rosetta Send"} description={"Rock Climbing Route database. MERN stack, custom JWT auth."} links={[{ title: 'Deployment', url: '' }, { title: 'GitHub', url: '' }]} />
   </div>
  )
 }
