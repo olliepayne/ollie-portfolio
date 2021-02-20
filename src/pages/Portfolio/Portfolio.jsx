@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 import CSS from './Portfolio.module.css'
 
 const Entry = (props) => {
@@ -7,13 +6,15 @@ const Entry = (props) => {
 
  return (
   <div className={CSS.entryContainer}>
-   <h4>{name}</h4>
-   <p>{description}</p>
-   <ul className={CSS.entryLinks}>
-    {links.map((link, index) => (
-     <li key={link.url}><a href={link.url}>{link.title}</a></li>
-    ))}
-   </ul>
+   <div className={CSS.entryContent}>
+    <h4>{name}</h4>
+    <p>{description}</p>
+    <ul className={CSS.entryLinks}>
+     {links.map((link, index) => (
+      <li key={link.url}><a href={link.url}>{link.title}</a></li>
+     ))}
+    </ul>
+   </div>
   </div>
  )
 }
@@ -30,7 +31,7 @@ const Section = (props) => {
 
  return (
   <div>
-   <h3 onClick={handleOpen}>{name}</h3>
+   <h3 className={CSS.sectionName} onClick={handleOpen}>{name}</h3>
    {isOpen &&
     <>
      {entries.map((entry) => (
@@ -53,7 +54,7 @@ const Portfolio = () => {
      ]
     }
    />
-   <Section 
+   <Section
     name={'General Assembly SEI Projects'}
     entries={
      [
