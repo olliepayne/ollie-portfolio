@@ -9,7 +9,7 @@
 .sectionName:hover {
  cursor: pointer;
  opacity: 50%;
- transform: scale(1.1);
+ color: rgb(255, 185, 204);
  text-decoration: underline;
 }
 
@@ -20,12 +20,12 @@
  justify-content: space-around;
  align-items: flex-start;
  background-color: whitesmoke;
- box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+ transition: 0.25s;
 }
 
 .entryContainer:hover {
- transform: translateY(-5px);
- transition: 0.5s ease-in-out;
+ transform: scale(1.04, 1.04);
 }
 
 .entryThumbnail {
