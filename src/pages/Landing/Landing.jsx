@@ -1,10 +1,23 @@
 import CSS from './Landing.module.css'
 
+const ImageCard = (props) => {
+  const { url, caption } = props
+
+  return (
+    <div className={CSS.imageCard}>
+      <div className={CSS.imageCardContent}>
+        <img src={url} alt="" />
+        <caption>{caption}</caption>
+      </div>
+    </div>
+  )
+}
+
 const Landing = () => {
   return (
     <div className={CSS.page}>
-      <div>
-
+      <div className={CSS.imagesContainer}>
+        <ImageCard url={'https://i.imgur.com/uqJKahs.jpg'} caption={'goofin on a V9+ boulder >:)'} />
       </div>
       <h2>About Me</h2>
       <p>
