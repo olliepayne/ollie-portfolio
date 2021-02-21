@@ -11,7 +11,7 @@ const Entry = (props) => {
     <p>{description}</p>
     <ul className={CSS.entryLinks}>
      {links.map((link, index) => (
-      <li key={link.url}><a href={link.url}>{link.title}</a></li>
+      <li key={link.url}><a href={link.url} target="blank">{link.title}</a></li>
      ))}
     </ul>
    </div>
@@ -50,6 +50,7 @@ const Portfolio = () => {
     name={'Favorites'}
     entries={
      [
+      { name: 'JS Cave Generator', description: '2D cave/level generation using basic Cellular Automaton', links: [{ title: 'Deployment', url: 'http://op-js-cave-generator.surge.sh/' }, { title: 'GitHub', url: 'https://github.com/olliepayne/js-cave-generator' }] },
       { name: 'Rosetta Send', description: 'Rock Climbing Route database. MERN stack, custom JWT auth.', links: [{ title: 'Deployment', url: 'https://blooming-retreat-36750.herokuapp.com/' }, { title: 'GitHub', url: 'https://github.com/olliepayne/rosetta-send-v2' }] }
      ]
     }
