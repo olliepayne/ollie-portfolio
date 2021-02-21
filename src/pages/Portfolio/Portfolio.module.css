@@ -8,7 +8,6 @@
 
 .sectionName:hover {
  cursor: pointer;
- opacity: 50%;
  color: rgb(255, 185, 204);
  text-decoration: underline;
 }
