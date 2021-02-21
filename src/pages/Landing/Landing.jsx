@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import CSS from './Landing.module.css'
 
 const Landing = () => {

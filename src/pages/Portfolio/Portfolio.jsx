@@ -15,7 +15,7 @@ const Entry = (props) => {
           ))}
         </ul>
       </div>
-      <a href={thumbnailURL} target="blank"><img className={CSS.entryThumbnail} src={thumbnailURL} /></a>
+      <a href={thumbnailURL} target="blank"><img className={CSS.entryThumbnail} src={thumbnailURL} alt="" /></a>
     </div>
   )
 }
