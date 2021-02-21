@@ -4,11 +4,11 @@ const Landing = () => {
   return (
     <div className={CSS.page}>
       <div>
-        
+
       </div>
       <h2>About Me</h2>
       <p>
-        My name is Ollie, and I'm a Fullstack Developer and Competitive Sport Climber!
+        My name is Oliver, or Ollie, and I'm a Fullstack Developer and Competitive Sport Climber!
         <br />
         Through spending the last two years in the fitness industry, I learned how to achieve goals in the quickest, simplest, and most efficient manner.
         <br />
