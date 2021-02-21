@@ -41,7 +41,7 @@
  width: 700px;
  padding: 20px;
  /* background-color: whitesmoke; */
- background-color: rgb(255, 248, 250);
+ background-color: rgb(255, 250, 252);
  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
  transition: 0.25s;
 }
