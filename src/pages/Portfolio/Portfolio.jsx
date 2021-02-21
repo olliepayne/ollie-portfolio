@@ -31,13 +31,15 @@ const Section = (props) => {
 
   return (
     <div className={CSS.sectionContainer}>
-      <h3 className={isOpen ? CSS.openSectionName : CSS.sectionName} onClick={handleOpen}>{name}</h3>
-      {isOpen &&
+      {isOpen ?
         <>
+          <h3 className={CSS.openSectionName} onClick={handleOpen}>{name} [collapse]</h3>
           {entries.map((entry) => (
             <Entry key={entry.name} name={entry.name} description={entry.description} links={entry.links} thumbnailURL={entry.thumbnailURL} />
           ))}
         </>
+        :
+        <h3 className={CSS.sectionName} onClick={handleOpen}>{name} [expand]</h3>
       }
     </div>
   )
