@@ -1,9 +1,9 @@
 .page {
- margin: 20px 40px;
  display: flex;
  flex-direction: column;
  align-items: center;
- justify-content: space-around;
+ justify-content: center;
+ margin-top: 20px;
 }
 
 .sectionContainer {
@@ -40,7 +40,7 @@
  align-items: flex-start;
  width: 700px;
  padding: 20px;
- background-color: whitesmoke;
+ /* background-color: whitesmoke; */
  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
  transition: 0.25s;
 }
@@ -71,4 +71,8 @@
 
 .entryLinks li {
  margin-left: 10px;
+}
+
+.entryLinks a {
+  color: cornflowerblue;
 }
