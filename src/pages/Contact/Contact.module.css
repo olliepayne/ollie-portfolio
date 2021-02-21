@@ -1,0 +1,46 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #333;
+  width: 300px;    
+  padding: 20px;
+}
+
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.contactContent > h2 {
+  border-bottom: 1px solid black;
+ }
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.entry * {
+  margin: 0;
+}
+
+.entry a {
+  text-decoration: none;
+  color: black;
+}
+
+.entry a:hover {
+  text-decoration: underline;
+  color: cornflowerblue;
+}

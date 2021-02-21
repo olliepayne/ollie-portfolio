@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
 import Landing from '../Landing/Landing'
 import Portfolio from '../Portfolio/Portfolio'
+import Contact from '../Contact/Contact'
 
 function App() {
  return (
@@ -15,6 +16,9 @@ function App() {
     </Route>
     <Route exact path="/portfolio">
      <Portfolio />
+    </Route>
+    <Route exact path="/contact">
+     <Contact />
     </Route>
    </Switch>
    <Footer />
