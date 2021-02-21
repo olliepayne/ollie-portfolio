@@ -32,7 +32,7 @@ const Section = (props) => {
 
   return (
     <div className={CSS.sectionContainer}>
-      <h3 className={CSS.sectionName} onClick={handleOpen}>{name}</h3>
+      <h3 className={isOpen ? CSS.openSectionName : CSS.sectionName} onClick={handleOpen}>{name}</h3>
       {isOpen &&
         <>
           {entries.map((entry) => (
@@ -53,7 +53,7 @@ const Portfolio = () => {
           [
             {
               name: 'JS Cave Generator',
-              description: '2D cave/level generation using basic Cellular Automaton',
+              description: '2D cave/level generation using Cellular Automaton.',
               links: [
                 {
                   title: 'Deployment',
