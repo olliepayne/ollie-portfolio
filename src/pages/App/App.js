@@ -1,6 +1,7 @@
 import { Switch, Route } from 'react-router-dom'
 import './App.css';
 import Navbar from '../../components/Navbar/Navbar'
+import Footer from '../../components/Footer/Footer'
 import Landing from '../Landing/Landing'
 import Portfolio from '../Portfolio/Portfolio'
 
@@ -16,6 +17,7 @@ function App() {
      <Portfolio />
     </Route>
    </Switch>
+   <Footer />
   </div>
  );
 }

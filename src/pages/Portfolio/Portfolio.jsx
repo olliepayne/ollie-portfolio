@@ -22,7 +22,6 @@ const Entry = (props) => {
 
 const Section = (props) => {
   const { name, entries } = props
-  console.log(entries)
 
   const [isOpen, setIsOpen] = useState(false)
 
