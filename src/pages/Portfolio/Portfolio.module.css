@@ -9,7 +9,7 @@
 .sectionName:hover {
  cursor: pointer;
  opacity: 50%;
- transform: translateY(-5px);
+ transform: scale(1.1);
  text-decoration: underline;
 }
 
@@ -17,9 +17,20 @@
 .entryContainer {
  margin-bottom: 10px;
  display: flex;
- flex-direction: column;
+ justify-content: space-around;
  align-items: flex-start;
  background-color: whitesmoke;
+ box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.entryContainer:hover {
+ transform: translateY(-5px);
+ transition: 0.5s ease-in-out;
+}
+
+.entryThumbnail {
+ width: 320px;
+ height: 180px;
 }
 
 .entryContent {

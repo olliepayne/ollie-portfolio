@@ -2,7 +2,7 @@ import { useState } from 'react'
 import CSS from './Portfolio.module.css'
 
 const Entry = (props) => {
- const { name, description, links } = props
+ const { name, description, links, thumbnailURL } = props
 
  return (
   <div className={CSS.entryContainer}>
@@ -15,6 +15,7 @@ const Entry = (props) => {
      ))}
     </ul>
    </div>
+   <img className={CSS.entryThumbnail} src={thumbnailURL} />
   </div>
  )
 }
@@ -35,7 +36,7 @@ const Section = (props) => {
    {isOpen &&
     <>
      {entries.map((entry) => (
-      <Entry key={entry.name} name={entry.name} description={entry.description} links={entry.links} />
+      <Entry key={entry.name} name={entry.name} description={entry.description} links={entry.links} thumbnailURL={entry.thumbnailURL} />
      ))}
     </>
    }
@@ -50,8 +51,35 @@ const Portfolio = () => {
     name={'Favorites'}
     entries={
      [
-      { name: 'JS Cave Generator', description: '2D cave/level generation using basic Cellular Automaton', links: [{ title: 'Deployment', url: 'http://op-js-cave-generator.surge.sh/' }, { title: 'GitHub', url: 'https://github.com/olliepayne/js-cave-generator' }] },
-      { name: 'Rosetta Send', description: 'Rock Climbing Route database. MERN stack, custom JWT auth.', links: [{ title: 'Deployment', url: 'https://blooming-retreat-36750.herokuapp.com/' }, { title: 'GitHub', url: 'https://github.com/olliepayne/rosetta-send-v2' }] }
+      {
+       name: 'JS Cave Generator', 
+       description: '2D cave/level generation using basic Cellular Automaton', 
+       links: [
+        { 
+         title: 'Deployment', 
+         url: 'http://op-js-cave-generator.surge.sh/' 
+        }, 
+        {
+         title: 'GitHub', 
+         url: 'https://github.com/olliepayne/js-cave-generator' 
+        }
+       ],
+       thumbnailURL: 'https://i.imgur.com/ov2oq6Q.png'
+      },
+      {
+       name: 'Rosetta Send',
+       description: 'Rock Climbing Route database. MERN stack, custom JWT auth.',
+       links: [
+        {
+         title: 'Deployment', 
+         url: 'https://blooming-retreat-36750.herokuapp.com/' 
+        }, 
+        { 
+         title: 'GitHub', 
+         url: 'https://github.com/olliepayne/rosetta-send-v2' 
+        }
+       ] 
+      }
      ]
     }
    />
