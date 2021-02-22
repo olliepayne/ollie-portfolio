@@ -17,7 +17,7 @@ const Landing = () => {
   return (
     <div className={CSS.page}>
       <div className={CSS.imagesContainer}>
-        <ImageCard url={'https://i.imgur.com/uqJKahs.jpg'} caption={'goofin on a V9+ boulder >:)'} />
+        <ImageCard url={'https://i.imgur.com/uqJKahs.jpg'} caption={'>:)'} />
       </div>
       <h2>About Me</h2>
       <p>
