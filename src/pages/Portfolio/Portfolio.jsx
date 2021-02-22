@@ -77,7 +77,7 @@ const Portfolio = () => {
                 },
                 {
                   title: 'GitHub',
-                  url: 'https://github.com/olliepayne/rosetta-send-v2'
+                  url: 'https://github.com/olliepayne/rosetta-send'
                 }
               ],
               thumbnailURL: 'https://i.imgur.com/hJNZWZp.png'
@@ -114,7 +114,7 @@ const Portfolio = () => {
                 }, 
                 { 
                   title: 'GitHub', 
-                  url: 'https://github.com/olliepayne/unit-2-project/blob/main/README.md' 
+                  url: 'https://github.com/olliepayne/mesocycle-tracker' 
                 }
               ],
               thumbnailURL: 'https://camo.githubusercontent.com/4ad8e2e4e325bc841cace1ad2d5af1281a13bda3b16928eb5233c3ff8b44203d/68747470733a2f2f692e696d6775722e636f6d2f625542353958572e706e67'
@@ -129,7 +129,7 @@ const Portfolio = () => {
                 }, 
                 { 
                   title: 'GitHub', 
-                  url: 'https://github.com/olliepayne/rosetta-send-v2' 
+                  url: 'https://github.com/olliepayne/rosetta-send' 
                 }
               ],
               thumbnailURL: 'https://i.imgur.com/hJNZWZp.png'
