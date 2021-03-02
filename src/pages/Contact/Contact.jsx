@@ -7,7 +7,7 @@ const Contact = () => {
         <div className={CSS.contactContent}>
           <h2>Contact</h2>
           <div className={CSS.entry}>
-            <h3><a href="https://drive.google.com/file/d/1uSDsQKhabLxyfzNS0PbDZ73iYiVFEm1E/view?usp=sharing" target="blank">Resume</a></h3>
+            <h3><a href="https://drive.google.com/file/d/13yRloD3_i3VYPr5d7vc_wc-c3HkRTtQF/view?usp=sharing" target="blank">Resume</a></h3>
           </div>
           <div className={CSS.entry}>
             <h3>Email</h3>
