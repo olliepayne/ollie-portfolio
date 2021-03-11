@@ -64,123 +64,82 @@ const Portfolio = () => {
         }
       ],
       thumbnailURL: 'https://i.imgur.com/ov2oq6Q.png',
-      catergory: ['Favorites']
+      categories: ['Favorites']
     },
+    {
+      name: 'Connect 4',
+      description: 'Recreated the classic Connect 4. HTML, CSS, and JavaScript.',
+      links: [
+        {
+          title: 'Deployment',
+          url: 'https://opconnect4.surge.sh/'
+        },
+        {
+          title: 'GitHub',
+          url: 'https://github.com/olliepayne/connect-four'
+        }
+      ],
+      thumbnailURL: 'https://github.com/olliepayne/connect-four/raw/main/images/screenshot2.png',
+      categories: ['General Assembly SEI Projects']
+    },
+    {
+      name: 'Mesocycle Tracker',
+      description: 'Athletic periodization tracking. MEN stack, Google OAuth.',
+      links: [
+        { 
+          title: 'Deployment', 
+          url: 'https://quiet-thicket-74088.herokuapp.com/' 
+        }, 
+        { 
+          title: 'GitHub', 
+          url: 'https://github.com/olliepayne/mesocycle-tracker' 
+        }
+      ],
+      thumbnailURL: 'https://camo.githubusercontent.com/4ad8e2e4e325bc841cace1ad2d5af1281a13bda3b16928eb5233c3ff8b44203d/68747470733a2f2f692e696d6775722e636f6d2f625542353958572e706e67',
+      categories: ['General Assembly SEI Projects']
+    },
+    { 
+      name: 'Rosetta Send', 
+      description: 'Rock Climbing Route database. MERN stack, custom JWT auth.', 
+      links: [
+        { 
+          title: 'Deployment', 
+          url: 'https://blooming-retreat-36750.herokuapp.com/' 
+        }, 
+        { 
+          title: 'GitHub', 
+          url: 'https://github.com/olliepayne/rosetta-send' 
+        }
+      ],
+      thumbnailURL: 'https://i.imgur.com/hJNZWZp.png',
+      categories: ['Favorites', 'General Assembly SEI Projects']
+    },
+    {
+      name: 'JS Palindrome Checker',
+      description: 'Common interview / coding challenge -- Palindrome checker',
+      links: [
+        {
+          title: 'Deployment',
+          url: 'http://op-js-palindrome-checker.surge.sh/'
+        },
+        {
+          title: 'GitHub',
+          url: 'https://github.com/olliepayne/js-palindrome-checker'
+        }
+      ],
+      thumbnailURL: '',
+      categories: ['Coding Challenges']
+    }
   ]
 
   return (
     <div className={CSS.page}>
-      <Section
-        name={'*Favorites*'}
-        entries={
-          [
-            {
-              name: 'JS Cave Generator',
-              description: '2D cave/level generation using Cellular Automaton.',
-              links: [
-                {
-                  title: 'Deployment',
-                  url: 'http://op-js-cave-generator.surge.sh/'
-                },
-                {
-                  title: 'GitHub',
-                  url: 'https://github.com/olliepayne/js-cave-generator'
-                }
-              ],
-              thumbnailURL: 'https://i.imgur.com/ov2oq6Q.png'
-            },
-            {
-              name: 'Rosetta Send',
-              description: 'Rock Climbing Route database. MERN stack, custom JWT auth.',
-              links: [
-                {
-                  title: 'Deployment',
-                  url: 'https://blooming-retreat-36750.herokuapp.com/'
-                },
-                {
-                  title: 'GitHub',
-                  url: 'https://github.com/olliepayne/rosetta-send'
-                }
-              ],
-              thumbnailURL: 'https://i.imgur.com/hJNZWZp.png'
-            }
-          ]
-        }
-      />
-      <Section
-        name={'General Assembly SEI Projects'}
-        entries={
-          [
-            {
-              name: 'Connect 4',
-              description: 'Recreated the classic Connect 4. HTML, CSS, and JavaScript.',
-              links: [
-                {
-                  title: 'Deployment',
-                  url: 'https://opconnect4.surge.sh/'
-                },
-                {
-                  title: 'GitHub',
-                  url: 'https://github.com/olliepayne/connect-four'
-                }
-              ],
-              thumbnailURL: 'https://github.com/olliepayne/connect-four/raw/main/images/screenshot2.png'
-            },
-            {
-              name: 'Mesocycle Tracker',
-              description: 'Athletic periodization tracking. MEN stack, Google OAuth.',
-              links: [
-                { 
-                  title: 'Deployment', 
-                  url: 'https://quiet-thicket-74088.herokuapp.com/' 
-                }, 
-                { 
-                  title: 'GitHub', 
-                  url: 'https://github.com/olliepayne/mesocycle-tracker' 
-                }
-              ],
-              thumbnailURL: 'https://camo.githubusercontent.com/4ad8e2e4e325bc841cace1ad2d5af1281a13bda3b16928eb5233c3ff8b44203d/68747470733a2f2f692e696d6775722e636f6d2f625542353958572e706e67'
-            },
-            { 
-              name: 'Rosetta Send', 
-              description: 'Rock Climbing Route database. MERN stack, custom JWT auth.', 
-              links: [
-                { 
-                  title: 'Deployment', 
-                  url: 'https://blooming-retreat-36750.herokuapp.com/' 
-                }, 
-                { 
-                  title: 'GitHub', 
-                  url: 'https://github.com/olliepayne/rosetta-send' 
-                }
-              ],
-              thumbnailURL: 'https://i.imgur.com/hJNZWZp.png'
-            }
-          ]
-        }
-      />
-      <Section
-        name={'Interview Challenges'}
-        entries={
-          [
-            {
-              name: 'JS Palindrome Checker',
-              description: 'Common interview / coding challenge -- Palindrome checker',
-              links: [
-                {
-                  title: 'Deployment',
-                  url: 'http://op-js-palindrome-checker.surge.sh/'
-                },
-                {
-                  title: 'GitHub',
-                  url: 'https://github.com/olliepayne/js-palindrome-checker'
-                }
-              ],
-              thumbnailURL: ''
-            }
-          ]
-        }
-      />
+      {catergories.map((category) => (
+        <Section
+          name={category}
+          entries={entries.filter(entry => entry.categories.includes(category))}
+        />
+      ))}
     </div>
   )
 }
