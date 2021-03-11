@@ -15,7 +15,7 @@ const Entry = (props) => {
           ))}
         </ul>
       </div>
-      <a href={thumbnailURL} target="blank"><img className={CSS.entryThumbnail} src={thumbnailURL} alt="" /></a>
+      <a href={thumbnailURL} target="blank"><img className={CSS.entryThumbnail} src={thumbnailURL} alt="image not available" /></a>
     </div>
   )
 }
@@ -133,6 +133,28 @@ const Portfolio = () => {
                 }
               ],
               thumbnailURL: 'https://i.imgur.com/hJNZWZp.png'
+            }
+          ]
+        }
+      />
+      <Section
+        name={'Interview Challenges'}
+        entries={
+          [
+            {
+              name: 'JS Palindrome Checker',
+              description: 'Common interview / coding challenge -- Palindrome checker',
+              links: [
+                {
+                  title: 'Deployment',
+                  url: 'http://op-js-palindrome-checker.surge.sh/'
+                },
+                {
+                  title: 'GitHub',
+                  url: 'https://github.com/olliepayne/js-palindrome-checker'
+                }
+              ],
+              thumbnailURL: ''
             }
           ]
         }
