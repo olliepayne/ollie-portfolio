@@ -46,6 +46,28 @@ const Section = (props) => {
 }
 
 const Portfolio = () => {
+  const catergories = ['Favorites', 'General Assembly SEI Projects', 'Coding Challenges']
+
+  const entries = 
+  [
+    {
+      name: 'JS Cave Generator',
+      description: '2D cave/level generation using Cellular Automaton.',
+      links: [
+        {
+          title: 'Deployment',
+          url: 'http://op-js-cave-generator.surge.sh/'
+        },
+        {
+          title: 'GitHub',
+          url: 'https://github.com/olliepayne/js-cave-generator'
+        }
+      ],
+      thumbnailURL: 'https://i.imgur.com/ov2oq6Q.png',
+      catergory: ['Favorites']
+    },
+  ]
+
   return (
     <div className={CSS.page}>
       <Section
