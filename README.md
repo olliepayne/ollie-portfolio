@@ -24,7 +24,7 @@ Contact Page
 * JavaScript
 
 ### Growth
-All my React knowledge up to this point, plus refinement
+All my React knowledge up to this point, plus refinement. I am extremely proud of the strategy I used to render the portfolio pieces, as well as the styling.
 
 #### Icebox
 (In no partucular order)
