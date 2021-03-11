@@ -10,7 +10,7 @@ const Entry = (props) => {
         <h4>{name}</h4>
         <p>{description}</p>
         <ul className={CSS.entryLinks}>
-          {links.map((link, index) => (
+          {links.map(link => (
             <li key={link.url}><a href={link.url} target="blank">{link.title}</a></li>
           ))}
         </ul>
