@@ -34,8 +34,14 @@ const Section = (props) => {
       {isOpen ?
         <>
           <h3 className={CSS.openSectionName} onClick={handleOpen}>{name} [collapse]</h3>
-          {entries.map((entry) => (
-            <Entry key={entry.name} name={entry.name} description={entry.description} links={entry.links} thumbnailURL={entry.thumbnailURL} />
+          {entries.map(entry => (
+            <Entry 
+              key={entry.name} 
+              name={entry.name} 
+              description={entry.description} 
+              links={entry.links} 
+              thumbnailURL={entry.thumbnailURL}
+            />
           ))}
         </>
         :
@@ -46,7 +52,7 @@ const Section = (props) => {
 }
 
 const Portfolio = () => {
-  const catergories = ['Favorites', 'General Assembly SEI Projects', 'Coding Challenges']
+  const categories = ['Favorites', 'General Assembly SEI Projects', 'Coding Challenges']
 
   const entries =
     [
@@ -129,12 +135,28 @@ const Portfolio = () => {
         ],
         thumbnailURL: '',
         categories: ['Coding Challenges']
+      },
+      {
+        name: 'JS Fizz Buzz',
+        description: 'Classic coding question / challenge made in JavaScript',
+        links: [
+          {
+            title: 'Deployment',
+            url: 'http://op-js-fizz-buzz.surge.sh/'
+          },
+          {
+            title: 'GitHub',
+            url: 'https://github.com/olliepayne/js-fizz-buzz'
+          }
+        ],
+        thumbnailURL: 'https://camo.githubusercontent.com/afb2b4e6ce5e985fdca8cfe33f410d3fbd1e3c9688c02ba2704d8542293f787c/68747470733a2f2f692e696d6775722e636f6d2f4d73684e78354d2e706e67',
+        categories: ['Coding Challenges']
       }
     ]
 
   return (
     <div className={CSS.page}>
-      {catergories.map((category) => (
+      {categories.map(category => (
         <Section
           key={category}
           name={category}
